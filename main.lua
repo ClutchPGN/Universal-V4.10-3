@@ -53,7 +53,7 @@ OthersSection:NewButton("18+ :smirk:", "info", function()
     print("why click")
 end)
 
-OthersSection:NewButton("R15 Emotes", "gives all animations for r15", function()   
+OthersSection:NewButton("R15 Emotes", "info", function()   
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
 end)
 
