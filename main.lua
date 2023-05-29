@@ -67,7 +67,7 @@ TrollSection:NewButton("ball", "Info", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/Ball/main/ball.lua"))()
 end)
 
-TrollSection:NewButton("Walk on Walls", "Info", function()
+TrollSection:NewButton("Walk on Walls", "makes you walk on walls", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/walk-on-walls/main/WalkOnWalls.lua"))()
 end)
 
