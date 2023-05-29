@@ -53,10 +53,6 @@ OthersSection:NewButton("18+ :smirk:", "info", function()
     print("why click")
 end)
 
-OthersSection:NewButton("Hitbox Expander", "info", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/fsB190FP"))
-end)
-
 OthersSection:NewButton("R15 Emotes", "info", function()   
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
 end)
@@ -73,14 +69,6 @@ end)
 
 TrollSection:NewButton("Walk on Walls", "Info", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/walk-on-walls/main/WalkOnWalls.lua"))()
-end)
-
-TrollSection:NewButton("RGB Chat Bubble (PATCHED)", "info", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/gaming-chat-bubble/main/GamingChatBubble.lua"))
-end)
-
-TrollSection:NewButton("Chat Controller V2", "info", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/Fe%20Chat%20control%20V2.lua"))
 end)
 
 
