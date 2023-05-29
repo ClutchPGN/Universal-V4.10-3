@@ -61,7 +61,9 @@ OthersSection:NewButton("R15 Emotes", "info", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
 end)
 
-OthersSection:NewButt("", "info" function()
+OthersSection:NewButton("Silent Aim", "info" function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
+end)
 
 local TrollSection = Tab:NewSection("Troll Scripts :troll:")
 
