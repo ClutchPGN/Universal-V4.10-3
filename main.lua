@@ -7,33 +7,33 @@ local Tab2 = Window:NewTab("Hubs/GUIs")
 local Section = Tab:NewSection("Level 6 - 8 Executors Required")
 
 -- buttons
-Section:NewButton("check level of executor", "info", function()
+Section:NewButton("check level of executor", "CHECK IT RIGHT NOW BI-", function()
 	printidentity()
 end)
 
 local UtilsSection = Tab:NewSection("Utility")
 
-UtilsSection:NewButton("Load Inf Yield", "info", function()
+UtilsSection:NewButton("Load Inf Yield", "lul", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-UtilsSection:NewButton("Load Dark Dex", "info", function()
+UtilsSection:NewButton("Load Dark Dex", "synapse script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
 
-UtilsSection:NewButton("Load R2S", "info", function()
+UtilsSection:NewButton("Load R2S", "remote spy", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/scriptsforvideos1/main/r2s.lua"))()
 end)
 
 local SecondSection = Tab:NewSection("LocalPlayer")
 
-SecondSection:NewButton("walkspeed", "info", function()
+SecondSection:NewButton("walkspeed", "Makes you walk faster.", function()
 	SecondSection:NewSlider("WalkSpeed value", "Makes you walk faster.", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
 end)
 
-SecondSection:NewButton("JumpPower", "info", function()
+SecondSection:NewButton("JumpPower", "Makes you jump higher.", function()
 	Section:NewSlider("JumpPower value", "Makes you jump higher.", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
     end)
@@ -41,29 +41,29 @@ end)
 
 local OthersSection = Tab:NewSection("Others")
 
-OthersSection:NewButton("Load Vape V4", "info", function()
+OthersSection:NewButton("Load Vape V4", "bedwars", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
 end)
 
-OthersSection:NewButton("Load Oblivion", "info", function()
+OthersSection:NewButton("Load Oblivion", "random script lmao", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptOblivion/Oblivion/main/loader.lua"))()
 end)
 
-OthersSection:NewButton("18+ :smirk:", "info", function()
+OthersSection:NewButton("18+ :smirk:", "no", function()
     print("why click")
 end)
 
-OthersSection:NewButton("R15 Emotes", "info", function()   
+OthersSection:NewButton("R15 Emotes", "gives all r15 emotes", function()   
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
 end)
 
-OthersSection:NewButton("Silent Aim", "info" function()
+OthersSection:NewButton("Silent Aim", "silent aim" function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Averiias/Universal-SilentAim/main/main.lua"))()
 end)
 
 local TrollSection = Tab:NewSection("Troll Scripts :troll:")
 
-TrollSection:NewButton("ball", "Info", function()
+TrollSection:NewButton("ball", "puts your character inside a ball", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/Ball/main/ball.lua"))()
 end)
 
