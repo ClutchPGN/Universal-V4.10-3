@@ -25,15 +25,15 @@ UtilsSection:NewButton("Load R2S", "remote spy", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/scriptsforvideos1/main/r2s.lua"))()
 end)
 
-local SecondSection = Tab:NewSection("LocalPlayer")
+local LocalPlayerSection = Tab:NewSection("LocalPlayer")
 
-SecondSection:NewButton("walkspeed", "Makes you walk faster.", function()
-	SecondSection:NewSlider("WalkSpeed value", "Makes you walk faster.", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+LocalPlayerSection:NewButton("walkspeed", "Makes you walk faster.", function()
+	LocalPlayerSection:NewSlider("WalkSpeed value", "Makes you walk faster.", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
 end)
 
-SecondSection:NewButton("JumpPower", "Makes you jump higher.", function()
+LocalPlayerSection:NewButton("JumpPower", "Makes you jump higher.", function()
 	Section:NewSlider("JumpPower value", "Makes you jump higher.", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
     end)
@@ -75,9 +75,9 @@ end)
 
 -- keybinds (imagine if i make it for buttons lmao)
 
-local ThirdSection = Tab:NewSection("keybind")
+local KeybindSection = Tab:NewSection("keybind")
 
-ThirdSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.M, function()
+KeybindSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.M, function()
 	Library:ToggleUI()
 end)
 
