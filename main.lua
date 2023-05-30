@@ -83,16 +83,23 @@ end)
 
 -- hubs and stuff
 
-local FourthSection = Tab2:NewSection("Hubs")
+local HubSection = Tab2:NewSection("Hubs")
 
 
 -- script hubs
 
-FourthSection:NewButton("Universal FE Hub", "info", function()
+HubSection:NewButton("Universal FE Hub", "info", function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
 end)
 
-FoutrhSection:NewButton("Owl Hub", "info", function()
+HubSection:NewButton("Owl Hub", "info", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
 end)
 
+HubSection:NewButton("Syntax V3 (key is SyntaxeV3Free)", "info" function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Vubm8tdf"))()
+end)
+
+HubSection:NewButton("Simplity V2", "info", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
+end)
