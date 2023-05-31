@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Universal FE / Rewrite", "ocean")
+local Window = Library.CreateLib("Universal FE / Rewrite", "Ocean")
 
 -- Windows
 
@@ -49,7 +49,7 @@ Section5:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.M, function()
 	Library:ToggleUI()
 end)
 
-Local Section6 = Tab:NewSection("Local Player Scripts")
+local Section6 = Tab:NewSection("Local Player Scripts")
 
 Section6:NewSlider("Walkspeed", "SliderInfo", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
