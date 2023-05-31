@@ -1,3 +1,8 @@
+--[[
+    Credits to all people who owns the scripts in this script.
+]] 
+
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Universal FE / Rewrite", "Ocean")
 
@@ -56,5 +61,5 @@ Section6:NewSlider("Walkspeed", "SliderInfo", 500, 16, function(s) -- 500 (MaxVa
 end)
 
 Section6:NewSlider("JumpPower", "SliderInfo", 500, 50, function(a) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpSpeed = a
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
 end)
