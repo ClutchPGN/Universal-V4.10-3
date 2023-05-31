@@ -52,7 +52,7 @@ Section4:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.M, function()
 	Library:ToggleUI()
 end)
 
-local Section6 = Tab:NewSection("Local Player Scripts")
+local Section5 = Tab:NewSection("Local Player Scripts")
 
 Section5:NewSlider("Walkspeed", "SliderInfo", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
