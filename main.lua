@@ -1,5 +1,7 @@
 --[[
     Credits to all people who owns the scripts in this script.
+
+    (If there are bugs, please tell me what it is.)
 ]] 
 
 
@@ -61,3 +63,5 @@ end)
 Section5:NewSlider("JumpPower", "SliderInfo", 500, 50, function(a) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
 end)
+
+
