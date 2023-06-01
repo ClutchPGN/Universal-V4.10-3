@@ -38,6 +38,12 @@ Section2:NewButton("Cmd X", "info", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
+local HubSection = Tab:NewSection("Hubs")
+
+HubSection:NewButton("Universal FE", "info", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script", true))()
+end)
+
 local Section3 = Tab:NewSection("Troll Scripts")
 
 Section3:NewButton("ball", "info", function()
