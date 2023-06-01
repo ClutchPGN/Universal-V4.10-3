@@ -45,7 +45,7 @@ Section3:NewButton("ball", "info", function()
 end)
 
 Section3:NewButton("Walk on Walls", "info", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/walk-on-walls/main/WalkOnWalls.lua)"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/walk-on-walls/main/WalkOnWalls.lua", true))()
 end)
 
 local Section4 = Tab:NewSection("Keybind")
