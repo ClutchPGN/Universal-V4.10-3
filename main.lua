@@ -38,6 +38,10 @@ Section2:NewButton("Cmd X", "info", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
+Section2:NewButton("Dex V2", "load dex v2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/Universal-V4.10-3/main/DexExplorerV2.lua", true))()
+end)
+
 local HubSection = Tab:NewSection("Hubs")
 
 HubSection:NewButton("Universal FE", "info", function()
@@ -70,4 +74,6 @@ Section5:NewSlider("JumpPower", "SliderInfo", 500, 50, function(a) -- 500 (MaxVa
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
 end)
 
-
+Section5:NewSlider("FOV", "SliderInfo", 120, 70, function(b)
+    game.Workspace.Camera.FieldOfView = b
+end)
