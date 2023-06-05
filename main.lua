@@ -74,6 +74,6 @@ Section5:NewSlider("JumpPower", "SliderInfo", 500, 50, function(a) -- 500 (MaxVa
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
 end)
 
-Section5:NewSlider("FOV", "SliderInfo", 120, 70, function(b)
+Section5:NewSlider("Fov", "SliderInfo", 120, 70, function(b)
     game.Workspace.Camera.FieldOfView = b
 end)
