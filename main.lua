@@ -6,11 +6,12 @@
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Universal FE / Rewrite", "Ocean")
+local Window = Library.CreateLib("Script.exe / Rewrite", "Ocean")
 
 -- Windows
 
 local Tab = Window:NewTab("Universal Scripts")
+local Tab2 = Window:NewTab("Information")
 
 -- REWRITE JAJJAJAJAJ
 
@@ -58,10 +59,15 @@ Section3:NewButton("Walk on Walls", "info", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/walk-on-walls/main/WalkOnWalls.lua", true))()
 end)
 
-local Section4 = Tab:NewSection("Keybind")
 
-Section4:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.M, function()
-	Library:ToggleUI()
+local PrisonSection = Tab:NewSection("Prison Life Scripts")
+
+PrisonSection:NewButton("Nexus Exploits", "info", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+end)
+
+PrisonSection:NewButton("Prison Breaker", "info", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/bW7z2gn8", true))()
 end)
 
 local Section5 = Tab:NewSection("Local Player Scripts")
@@ -76,4 +82,12 @@ end)
 
 Section5:NewSlider("Fov", "SliderInfo", 120, 70, function(b)
     game.Workspace.Camera.FieldOfView = b
+end)
+
+local InfoSection = Tab2:NewSection("Information")
+
+InfoSection:NewButton("Currently using version: 4.10-3")
+
+InfoSection:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.M, function()
+	Library:ToggleUI()
 end)
