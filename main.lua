@@ -10,7 +10,8 @@ local Window = Library.CreateLib("Script.exe / Rewrite", "Ocean")
 
 -- Windows
 
-local Tab = Window:NewTab("Universal Scripts")
+local WelcomeTab = Window:NewTab("Welcome")
+local Tab = Window:NewTab("Scripts")
 local Tab2 = Window:NewTab("Information")
 
 -- REWRITE JAJJAJAJAJ
@@ -59,6 +60,9 @@ Section3:NewButton("Walk on Walls", "info", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/TheMagicFan/walk-on-walls/main/WalkOnWalls.lua", true))()
 end)
 
+Section3:NewButton("Fake Lag GUI", "info", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
+end)
 
 local PrisonSection = Tab:NewSection("Prison Life Scripts")
 
@@ -91,3 +95,7 @@ InfoSection:NewButton("Currently using version: 4.10-3")
 InfoSection:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.M, function()
 	Library:ToggleUI()
 end)
+
+local WelcomeSection = WelcomeTab:NewSection("Welcome, User!")
+
+WelcomeSection:NewButton("made this script for no reason, hf")
